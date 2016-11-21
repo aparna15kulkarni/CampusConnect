@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Building Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Building Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/buildingAddress"
+        android:layout_alignBottom="@+id/buildingAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/buildingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:text="@string/buildingAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buildingAddress"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/buildingName"
+        android:layout_alignLeft="@+id/buildingName"
+        android:layout_alignStart="@+id/buildingName" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/buildingAddress"
+        android:layout_alignStart="@+id/buildingAddress"
+        android:id="@+id/Time" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Distance"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/Time"
+        android:layout_alignStart="@+id/Time" />
+
+    <TextView
+        android:text="Travel Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical"
+        android:layout_below="@+id/Distance"
+        android:id="@+id/ImageLayout">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:id="@+id/Buildingimage"
+            />
+        <!--android:scaleType="fitXY"-->
+        <!--app:srcCompat="@drawable/pin"-->
+            <!--android:layout_below="@+id/Distance"-->
+            <!--android:layout_alignLeft="@+id/button"-->
+            <!--android:layout_alignStart="@+id/button"-->
+
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--app:srcCompat="@drawable/pin"-->
+        <!--android:id="@+id/Buildingimage"-->
+        <!--android:layout_below="@+id/Distance"-->
+        <!--android:layout_alignLeft="@+id/button"-->
+        <!--android:layout_alignStart="@+id/button"  />-->
+        <!--android:layout_marginTop="22dp"-->
+
+        <!--android:layout_marginLeft="34dp"-->
+        <!--android:layout_marginStart="34dp"-->
+
+
+    <TextView
+        android:text="Travel Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:id="@+id/back_button"
+        android:layout_height="40dp"
+        android:layout_below="@id/ImageLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Street View"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button"
+        android:layout_below="@id/ImageLayout"
+        android:layout_alignParentLeft="true"
+         />
+
+</RelativeLayout>

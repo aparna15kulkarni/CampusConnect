@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CampusApp</string>
+    <string name="buildingName">Building Name</string>
+    <string name="buildingAddress">Building Address</string>
+    <string name="title_activity_street_view2">Map</string>
+    <string name="hint_search">Building Name</string>
+</resources>
